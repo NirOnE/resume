@@ -78,8 +78,11 @@
   <!--  -->
 
   <div class="landing">
-    <div class="home-wrap">
+    <!-- <div class="home-wrap">
       <div class="home-inner">
+      </div> -->
+    <div class="home-p-wrap">
+      <div class="home-bg">
       </div>
     </div>
   </div>
@@ -106,30 +109,34 @@
   <!--- Profile  -->
 
   <article class="jumbotron about-me animatedParent" id="Profile">
-    <div class="container row  text-center">
+    <div class="container row text-center">
 
       <div class="col-lg-6 col-md-6">
-        <h2 class="animated fadeInUp "> Profile 
+        <h2 class="animated fadeInUp "> Profile
           <i class="fa fa-male"></i>
         </h2>
       </div>
       <div class="col-lg-6 col-md-6 animated fadeInDown">
-          <img src="img/moicrop.png" alt="Avatar">
+        <img src="img/moicrop.png" alt="Avatar">
       </div>
     </div>
-    <div class="row about-me justify-content-around">
+    <div class="container row about-me">
       <!-- <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"> -->
-      <div class="col-md-5 animated fadeInLeft">
+      <div class="col-lg-6 col-md-6 col-sm-12 animated fadeInLeft">
         <!--         <h3>Profile</h3> -->
         <span class="lead active-colour"> Hello, I am Erwann Colcanap, Results driven Software & Electrical Engineer
         </span>
         <!--         <p>System testing and implementation. Expertise in system / business analysis, troubleshooting, electrical engineering
           and technical solutions. Adaptable with creative problem solving and strong technical skills. Self-driven and able
           to multi-task in a fast-paced environment.</p> -->
-        <p>Results driven with more than 6 years of experience in programming, system testing and implementation, network
-          administration and product support. Expertise in system / business analysis, troubleshooting, security system review,
-          electrical engineering and technical solutions. Adaptable with creative problem solving and strong technical skills.
-          Self-driven and able to multi-task in a fast-paced environment. Fluent in French, with excellent verbal and writing
+        <p>Results driven with more than 6 years of experience in programming, system testing and implementation,
+          network
+          administration and product support. Expertise in system / business analysis, troubleshooting, security system
+          review,
+          electrical engineering and technical solutions. Adaptable with creative problem solving and strong technical
+          skills.
+          Self-driven and able to multi-task in a fast-paced environment. Fluent in French, with excellent verbal and
+          writing
           skills in English. </p>
         <br>
         <hr class="myline">
@@ -140,11 +147,11 @@
       </div>
       <!-- <div class="col-md-1"></div> -->
       <!-- <div class="ccol-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"> -->
-      <div class="col-md-4 infos">
+      <div class="col-lg-6 col-md-6 col-sm-12 infos">
         <!--         <h3 class="Informations">Personnal Infos</h3> -->
-        <div class=" animated fadeInRight">
-        <i class="fas fa-home fa-align-center "></i>
-      </div>
+        <div class="animated fadeInRight">
+          <i class="fas fa-home fa-align-center "></i>
+        </div>
         <ul class="list-group animated fadeInRight">
           <li class="list-group-item">
             <div class="row">
@@ -215,6 +222,7 @@
         <h6 class="animated fadeInLeft">Software / Electrical Engineer</h6>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 animated fadeInLeft slow">
+        <i class="fas fa-code"></i>
         <h1>Languages & Software</h1>
 
         <div class="skillbar clearfix " data-percent="80%">
@@ -254,12 +262,12 @@
         <!-- End Skill Bar -->
 
 
-        <div class="skillbar clearfix " data-percent="60%">
+        <div class="skillbar clearfix " data-percent="40%">
           <div class="skillbar-title" style="background: #124e8c;">
             <span>Python</span>
           </div>
           <div class="skillbar-bar" style="background: #4288d0;"></div>
-          <div class="skill-bar-percent">60%</div>
+          <div class="skill-bar-percent">40%</div>
         </div>
         <!-- End Skill Bar -->
         <div class="skillbar clearfix " data-percent="35%">
@@ -281,28 +289,37 @@
         <!-- End Skill Bar -->
 
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-6">
-        <i class="fas fa-bold"></i>
-        <h3>Operating Systems</h3>
-        <div class="container">
-          <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 animated fadeInRight slow">
+        <i class="fas fa-language"></i>
+        <h1>Operating Systems</h1>
+        <div class="container ">
+          <div class="row justify-content-md-center">
             <div class="animatedParent">
-              <div class=" animated fadeInRight" id="circlechart1"></div>
+              <div class="col-md-6">
+                <div class="animated fadeInRight" id="circlechart1"></div>
+              </div>
+              <p class="charts">Linux</p>
             </div>
             <div class="animatedParent">
-              <div class=" animated fadeInRight" id="circlechart2"></div>
+              <div class="col-md-6">
+                <div class="animated fadeInRight" id="circlechart2"></div>
+              </div>
+              <p class="charts">Embedded</p>
             </div>
             <div class="animatedParent">
-              <div class=" animated fadeInRight" id="circlechart3"></div>
+              <div class="col-md-6">
+                <div class="animated fadeInRight" id="circlechart3"></div>
+              </div>
+              <p class="charts">Windows</p>
             </div>
           </div>
         </div>
       </div>
 
 
-      <div class="col-sm-12 col-md-12 ">
-        <i class="fab fa-css3"></i>
-        <h3>Digital Signal Processing</h3>
+      <div class="col-sm-12 col-md-12 col-md-6 animated fadeInUp slow">
+        <i class="fas fa-microchip"></i>
+        <h1>Digital Signal Processing</h1>
         <p>blah blah insert animated graph</p>
       </div>
       <!--   </div> -->
@@ -344,10 +361,14 @@
         <div class="cv-item animated fadeInRight">
           <h3>Job Description</h3>
           <p>
-            Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec, commodo risus. Aliquam congue
-            dignissim tempus. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla dapibus
-            felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim adipiscing leo quis sagittis.
+            Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec, commodo
+            risus. Aliquam congue
+            dignissim tempus. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus. Interdum et
+            malesuada
+            fames ac ante ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla
+            dapibus
+            felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim adipiscing leo quis
+            sagittis.
             Aenean vitae turpis lectus. Suspendisse porttitor vulputate scelerisque.
           </p>
         </div>
@@ -375,10 +396,14 @@
         <div class="cv-item animated fadeInRight">
           <h3>Job Description</h3>
           <p>
-            Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec, commodo risus. Aliquam congue
-            dignissim tempus. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla dapibus
-            felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim adipiscing leo quis sagittis.
+            Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec, commodo
+            risus. Aliquam congue
+            dignissim tempus. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus. Interdum et
+            malesuada
+            fames ac ante ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla
+            dapibus
+            felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim adipiscing leo quis
+            sagittis.
             Aenean vitae turpis lectus. Suspendisse porttitor vulputate scelerisque.
           </p>
         </div>
@@ -426,10 +451,14 @@
         <div class="cv-item animated fadeInRight">
           <h3>Job Description</h3>
           <p>
-            Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec, commodo risus. Aliquam congue
-            dignissim tempus. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla dapibus
-            felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim adipiscing leo quis sagittis.
+            Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec, commodo
+            risus. Aliquam congue
+            dignissim tempus. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus. Interdum et
+            malesuada
+            fames ac ante ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla
+            dapibus
+            felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim adipiscing leo quis
+            sagittis.
             Aenean vitae turpis lectus. Suspendisse porttitor vulputate scelerisque.
           </p>
         </div>
@@ -457,10 +486,14 @@
         <div class="cv-item animated fadeInRight">
           <h3>Job Description</h3>
           <p>
-            Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec, commodo risus. Aliquam congue
-            dignissim tempus. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla dapibus
-            felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim adipiscing leo quis sagittis.
+            Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec, commodo
+            risus. Aliquam congue
+            dignissim tempus. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus. Interdum et
+            malesuada
+            fames ac ante ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla
+            dapibus
+            felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim adipiscing leo quis
+            sagittis.
             Aenean vitae turpis lectus. Suspendisse porttitor vulputate scelerisque.
           </p>
         </div>
@@ -556,8 +589,10 @@
   <script src="js/myprogressbar.js"></script>
   <script src="js/progressbar.js"></script>
   <script src="js/progresscharts.js"></script>
-  <script src="js/wow.js"></script>
-  <script> new WOW().init();  </script>
+  <script src="js/perspective.js"></script>
+
+  <!-- <script src="js/wow.js"></script> -->
+  <!-- <script> new WOW().init();  </script> -->
 </body>
 
 </html>
