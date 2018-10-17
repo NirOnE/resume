@@ -7,7 +7,22 @@ body {
   color: #667f93;
   font-family: "Raleway";
   font-size: 16px;
+  /* overflow-x:hidden  */
 }
+
+/* .container {
+  padding-left: -15px;
+  padding-right: -15px;
+  margin-right:auto;
+  margin-left:auto
+}
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right:auto;
+  margin-left:auto
+} */
 
 a,
 a:hover,
@@ -57,7 +72,7 @@ a:focus {
   /*    background-color: rgba(128, 128, 128, 0.048) ;*/
   font-size: 16px;
   padding: 1 rem;
-  border-radius: 0;
+  /* border-radius: 0; */
 }
 
 .about-me .row {
@@ -195,7 +210,7 @@ figure {
 #fixed {
   background-image: url("img/computer-code-1.jpg");
   position: fixed;
-  display: block;
+  display: table;
   top: 0;
   left: 0;
   width: 100%;
@@ -221,6 +236,7 @@ figure {
   transform: translateZ(0);
   will-change: transform;
 }
+
 
 /* hr.myline{
 	background-color: #fff;
@@ -636,7 +652,6 @@ figure {
   transform: translateZ(0);
   will-change: transform;
   background-image: url(img/computer-1.jpg);
-
 }
 
 /******** Perspective *******/
@@ -655,11 +670,12 @@ figure {
   left: 0;
   z-index: -1;
   background-position: center center;
-
+  -webkit-transform: translateZ(0);
+  transform: translateZ();
   background-image: url(img/computer-1.jpg);
   background-size: cover;
 
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 .caption {
@@ -675,10 +691,12 @@ figure {
     padding: 1rem;
 } */
 
+
+
+
+
 /*---Media Queries --*/
 @media (max-width: 1200px) {
-
-
   .skillz .fa-microchip {
     font-size: 3em;
     font-weight: bold;
@@ -693,7 +711,6 @@ figure {
   /*     .container{
         width: 970px;
         } */
-
 
   .contactsocial a {
     font-size: 2em;
