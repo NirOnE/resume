@@ -8,6 +8,7 @@ body {
   font-family: "Raleway";
   font-size: 16px;
   /* overflow-x:hidden  */
+  scroll-behavior: smooth;
 }
 
 /* .container {
@@ -123,16 +124,36 @@ a:focus {
   padding: 0;
   line-height: 30px;
   text-align: left;
+  padding-bottom: 2em;
+  padding-top: 2rem;
 }
 
 .about-me .fa-home {
   font-size: 2em;
   font-weight: bold;
-  padding: 1em 0 1em 40%;
+  padding: 1em 0 0em 0%;
+}
+
+
+.about-me .fa-male{
+
+  color: #667f93;
 }
 
 .infos {
   margin-top: 2em;
+}
+
+
+.about-me .span{
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  text-align: left;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .contactsocial a {
@@ -161,7 +182,12 @@ ul {
   padding: 0.5rem;
   /* padding: 1em 0; */
   /* border-bottom-width: 1px;
-	border-bottom-style: solid;  */
+  border-bottom-style: solid;  */
+  text-align: left;
+}
+
+.list-group-item h6 {
+  text-align: left;
 }
 
 .infos li {
@@ -173,7 +199,7 @@ ul {
 }
 
 .about-me .col-md-6 {
-  padding-left: 12%;
+  /* padding-left: 12%; */
 }
 
 .active-colour {
@@ -199,7 +225,8 @@ figure {
   height: 30%;
   margin: 0 !important;
 }
-.fixed-wrap {
+
+.fixed-wrap-contact {
   clip: rect(0, auto, auto, 0);
   position: absolute;
   top: 0;
@@ -207,8 +234,57 @@ figure {
   width: 100%;
   height: 100%;
 }
-#fixed {
+
+#fixed-contact {
   background-image: url("img/computer-code-1.jpg");
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+
+
+.fixed-wrap-edu {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed-edu {
+  background-image: url("img/education.jpeg");
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.fixed-wrap-work {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed-work{
+  background-image: url("img/teamwork.jpeg");
   position: fixed;
   display: table;
   top: 0;
@@ -236,7 +312,6 @@ figure {
   transform: translateZ(0);
   will-change: transform;
 }
-
 
 /* hr.myline{
 	background-color: #fff;
@@ -388,8 +463,8 @@ figure {
   margin-bottom: 0.1rem;
 }
 
-.skillz .fa-language {
-  font-weight: bold;
+.skillz .fa-linux {
+  /* font-weight: bold; */
   color: #563d7c;
   font-size: 4em;
   margin: 1rem;
@@ -397,14 +472,14 @@ figure {
 
 .skillz .fa-microchip {
   font-size: 4em;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #2163af;
   margin: 1rem;
   margin-top: 3rem;
 }
 
 .skillz .fa-code {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #2163af;
   font-size: 4em;
   margin: 1rem;
@@ -466,6 +541,15 @@ figure {
   margin-bottom: 70px;
   max-width: 580px;
   font-size: 2rem;
+}
+
+.skillz h5 {
+  color: #667d8f;
+  font-weight: 400;
+  line-height: 2em;
+  margin-bottom: 70px;
+  font-size: 1rem;
+  text-align: left;
 }
 
 .charts {
@@ -691,12 +775,37 @@ figure {
     padding: 1rem;
 } */
 
-
-
-
-
 /*---Media Queries --*/
 @media (max-width: 1200px) {
+
+  .display-2 {
+    /* font-size: 3.5em;   */
+  }
+
+  .about-me h2{
+    /* font-size: 200%;
+    text-align: center;
+    padding-bottom: 1em; */
+  }
+
+  .about-me .lead{
+    /* font-size: 125%;
+    text-align: left; */
+    padding-bottom: 2em; 
+  }
+
+  .about-me p{
+    padding-top: 2rem;
+    /* font-weight: normal; */
+  }
+
+  .jumbotron img{
+    /* border-radius: 0%; */
+    padding-bottom: 2em;
+  }
+
+
+
   .skillz .fa-microchip {
     font-size: 3em;
     font-weight: bold;
@@ -711,6 +820,32 @@ figure {
   /*     .container{
         width: 970px;
         } */
+
+  .display-2 {
+    font-size: 3.5em;
+  }
+
+  .about-me h2 {
+    /* font-size: 200%; */
+    text-align: center;
+    padding-bottom: 1em;
+    /* padding-top: 2em; */
+  }
+
+  .about-me .lead {
+    font-size: 125%;
+    text-align: left;
+    padding-bottom: 2em;
+  }
+
+  .about-me p {
+    padding-top: 2rem;
+    font-weight: normal;
+  }
+
+  .jumbotron img {
+    padding-bottom: 2em;
+  }
 
   .contactsocial a {
     font-size: 2em;
@@ -747,6 +882,33 @@ figure {
         width: 750px;
         }
  */
+
+  .display-2 {
+    font-size: 3.5em;
+  }
+
+  .about-me h2 {
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .about-me .lead {
+    font-size: 125%;
+    text-align: left;
+    padding-bottom: 2em;
+  }
+
+  .about-me p {
+    padding-top: 2rem;
+    font-weight: normal;
+  }
+
+  .jumbotron img {
+    border-radius: 0%;
+    padding-bottom: 2em;
+  }
+
   .skillz .fa-microchip {
     font-size: 3em;
     font-weight: bold;
@@ -773,25 +935,25 @@ figure {
   }
   .fa-skype {
     color: #00aced;
-    font-size: 1.8em;
+    font-size: 2.5em;
     padding-left: 1rem;
   }
 
   .fa-linkedin {
     color: #0077b5;
-    font-size: 1.8em;
+    font-size: 2.5em;
     padding-left: 1rem;
   }
 
   .fa-instagram {
     color: #fbad50;
-    font-size: 1.8em;
+    font-size: 2.5emm;
     padding-left: 1rem;
   }
 
   .fa-envelope {
     color: #0063dc;
-    font-size: 1.8em;
+    font-size: 2.5em;
     padding-left: 1rem;
   }
 
@@ -800,11 +962,49 @@ figure {
   .about-me h3 {
     font-size: 250%;
   }
+
+  .skillz h5 {
+    font-size: 150%;
+  }
 }
 @media (max-width: 576px) {
   /*     .skillz {
         padding: 0.5em 1em;
     } */
+
+  .caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+  }
+
+  .display-2 {
+    font-size: 3.5em;
+  }
+
+  .about-me h2 {
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .about-me .lead {
+    font-size: 125%;
+    text-align: left;
+    padding-bottom: 2em;
+  }
+
+  .about-me p {
+    padding-top: 2rem;
+    font-weight: normal;
+  }
+
+  .jumbotron img {
+    border-radius: 0%;
+    padding-bottom: 2em;
+  }
 
   .skillz .fa-microchip {
     font-size: 3em;
@@ -831,25 +1031,25 @@ figure {
   }
   .fa-skype {
     color: #00aced;
-    font-size: 1em;
+    font-size: 2.5em;
     padding-left: 0.5rem;
   }
 
   .fa-linkedin {
     color: #0077b5;
-    font-size: 1em;
+    font-size: 2.5em;
     padding-left: 0.5rem;
   }
 
   .fa-instagram {
     color: #fbad50;
-    font-size: 1em;
+    font-size: 2.5emm;
     padding-left: 0.5rem;
   }
 
   .fa-envelope {
     color: #0063dc;
-    font-size: 1em;
+    font-size: 2.5em;
     padding-left: 0.5rem;
   }
 }

@@ -2,7 +2,7 @@ var lFollowX = 0,
     lFollowY = 0,
     x = 0,
     y = 0,
-    friction = 1 / 30;
+    friction = 1 / 20;
 
 function moveBackground() {
   x += (lFollowX - x) * friction;
@@ -26,6 +26,14 @@ $(window).on('mousemove click', function(e) {
   lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
   lFollowY = (10 * lMouseY) / 100;
 
+});
+
+/* for mobile*/
+$(window).on('touchmove', function(e) {
+    var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.originalEvent.touches[0].pageX));
+    var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.originalEvent.touches[0].pageY));
+    lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY = (10 * lMouseY) / 100;
 });
 
 moveBackground();
