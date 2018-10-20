@@ -70,10 +70,13 @@ a:focus {
 }
 
 .about-me {
-  /*    background-color: rgba(128, 128, 128, 0.048) ;*/
   font-size: 16px;
   padding: 1 rem;
   /* border-radius: 0; */
+}
+
+.jumbotron {
+  background-color: rgba(#eeeff4);
 }
 
 .about-me .row {
@@ -134,9 +137,7 @@ a:focus {
   padding: 1em 0 0em 0%;
 }
 
-
-.about-me .fa-male{
-
+.about-me .fa-male {
   color: #667f93;
 }
 
@@ -144,8 +145,7 @@ a:focus {
   margin-top: 2em;
 }
 
-
-.about-me .span{
+.about-me .span {
   font-size: 1em;
   font-weight: normal;
   margin: 0;
@@ -250,8 +250,6 @@ figure {
   will-change: transform;
 }
 
-
-
 .fixed-wrap-edu {
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -283,8 +281,8 @@ figure {
   width: 100%;
   height: 100%;
 }
-#fixed-work{
-  background-image: url("img/teamwork.jpeg");
+#fixed-work {
+  background-image: url("img/clock.jpeg");
   position: fixed;
   display: table;
   top: 0;
@@ -465,7 +463,7 @@ figure {
 
 .skillz .fa-linux {
   /* font-weight: bold; */
-  color: #563d7c;
+  color: #2163af;
   font-size: 4em;
   margin: 1rem;
 }
@@ -766,7 +764,7 @@ figure {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 40%;
+  top: 30%;
   z-index: 1;
 }
 
@@ -775,36 +773,196 @@ figure {
     padding: 1rem;
 } */
 
+/**DSP PROGRAMMING TABLEAU****/
+
+.tableau {
+  padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+}
+
+.tableau::after {
+  content: "";
+  background: #60a9ff;
+  background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+  background: -webkit-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+  background: linear-gradient(to bottom, #60a9ff 0%, #4394f4 100%);
+  border-radius: 30px;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .tableau {
+    padding: 0 0 25px;
+  }
+}
+
+.tableau .container {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+  width: 100%;
+}
+
+.tableau h4 {
+  color: #0f283eb2;
+  /* font-size: 3.5em; */
+  font-weight: 800;
+  line-height: 0.9em;
+  margin: 0;
+  text-transform: uppercase;
+  /* padding: 0.3em;
+  padding-bottom: 0.7em; */
+}
+
+
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.pricing-table {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08),
+    0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 80px;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: #016ff9;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 30px 0 25px;
+}
+
+.pricing-features-item {
+  border-top: 1px solid #e1f1ff;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  color: #667d8f;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #269aff;
+}
+
+/********* END TABLEAU **************/
+
 /*---Media Queries --*/
 @media (max-width: 1200px) {
-
   .display-2 {
     /* font-size: 3.5em;   */
   }
 
-  .about-me h2{
+  .about-me h2 {
     /* font-size: 200%;
     text-align: center;
     padding-bottom: 1em; */
   }
 
-  .about-me .lead{
+  .about-me .lead {
     /* font-size: 125%;
     text-align: left; */
-    padding-bottom: 2em; 
+    padding-bottom: 2em;
   }
 
-  .about-me p{
+  .about-me p {
     padding-top: 2rem;
     /* font-weight: normal; */
   }
 
-  .jumbotron img{
+  .jumbotron img {
     /* border-radius: 0%; */
     padding-bottom: 2em;
   }
-
-
 
   .skillz .fa-microchip {
     font-size: 3em;
@@ -917,6 +1075,19 @@ figure {
     margin: 1rem;
     margin-top: 2rem;
   }
+
+  .cv-item {
+    padding: 25px 0 5px 30px;
+    border-left: none;
+    margin-top: -10px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+
+  .cv-section {
+    border-bottom: none;
+  }
+
   .carousel-caption {
     top: 45%;
   }
@@ -965,6 +1136,9 @@ figure {
 
   .skillz h5 {
     font-size: 150%;
+    margin-bottom: 70px;
+    font-size: 1rem;
+    text-align: justify;
   }
 }
 @media (max-width: 576px) {
@@ -1006,6 +1180,23 @@ figure {
     padding-bottom: 2em;
   }
 
+  .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    font-weight: normal;
+    font-size: 11px;
+    color: #ffffff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
   .skillz .fa-microchip {
     font-size: 3em;
     font-weight: bold;
@@ -1013,6 +1204,26 @@ figure {
     font-size: 4em;
     margin: 1rem;
   }
+
+  .skillz h5 {
+    font-size: 100%;
+    margin-bottom: 70px;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .cv-item {
+    padding: 25px 0 5px 30px;
+    border-left: none;
+    margin-top: -10px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+
+  .cv-section {
+    border-bottom: none;
+  }
+
   .carousel-caption {
     top: 45%;
   }
