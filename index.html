@@ -74,7 +74,7 @@
     <div class="home-wrap">
       <div class="home-inner">
       </div>
-    <!-- <div class="home-p-wrap">
+      <!-- <div class="home-p-wrap">
       <div class="home-bg">
       </div> -->
     </div>
@@ -133,9 +133,11 @@
             gathering to design, coding, testing, documentation and implementation. My technical expertise includes
             cross-platform proficiency (Windows, Unix, Linux, Embedded platform) fluency in 6 scripting/programming
             languages (including C, C++ and Matlab) and advanced knowledge of developer applications,
-            tools, methodologies and best practices (including OOD, MVC and self-test automation). I am adaptable with creative problem solving and strong
-            technical skills, self-driven and able to multi-task in a fast-paced environment. I am also fluent in French, with excellent verbal and
-            writing skills in English.  </p>
+            tools, methodologies and best practices (including OOD, MVC and self-test automation). I am adaptable with
+            creative problem solving and strong
+            technical skills, self-driven and able to multi-task in a fast-paced environment. I am also fluent in
+            French, with excellent verbal and
+            writing skills in English. </p>
           <br>
           <hr class="myline">
           <br>
@@ -146,7 +148,7 @@
         <!-- <div class="col-md-1"></div> -->
         <!-- <div class="ccol-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"> -->
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 infos">
-        <!--         <h3 class="Informations">Personnal Infos</h3> -->
+          <!--         <h3 class="Informations">Personnal Infos</h3> -->
           <div class="wow fadeInRight">
             <i class="fas fa-home fa-align-center "></i>
           </div>
@@ -642,7 +644,24 @@
   <script src="js/perspective.js"></script>
 
   <script src="js/wow.js"></script>
-  <script> new WOW().init();  </script>
+  <!-- <script> new WOW().init();  </script> -->
+  <script>
+    var wow = new WOW(
+      {
+        boxClass: 'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 0,          // distance to the element when triggering the animation (default is 0)
+        mobile: false,       // trigger animations on mobile devices (default is true)
+        live: true,       // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+    );
+    wow.init();
+    </script>
 
 </body>
 

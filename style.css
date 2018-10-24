@@ -8,7 +8,7 @@ body {
   font-family: "Raleway";
   font-size: 16px;
   /* overflow-x:hidden  */
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 /* .container {
@@ -821,7 +821,6 @@ figure {
   padding-bottom: 0.7em; */
 }
 
-
 .panel {
   background-color: #fff;
   border-radius: 10px;
@@ -906,32 +905,6 @@ figure {
   display: block;
   font-size: 32px;
   font-weight: 700;
-}
-
-.pricing-button {
-  border: 1px solid #9dd1ff;
-  border-radius: 10px;
-  color: #348efe;
-  display: inline-block;
-  margin: 25px 0;
-  padding: 15px 35px;
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-}
-
-.pricing-button:hover,
-.pricing-button:focus {
-  background-color: #e1f1ff;
-}
-
-.pricing-button.is-featured {
-  background-color: #48aaff;
-  color: #fff;
-}
-
-.pricing-button.is-featured:hover,
-.pricing-button.is-featured:active {
-  background-color: #269aff;
 }
 
 /********* END TABLEAU **************/
@@ -1145,6 +1118,68 @@ figure {
   /*     .skillz {
         padding: 0.5em 1em;
     } */
+
+  .panel {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0px 0px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .tableau h4 {
+    color: #0f283eb2;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 0.9em;
+    margin: 0;
+    text-transform: none;
+    /* padding: 0.3em;
+      padding-bottom: 0.7em; */
+  }
+  .pricing-features {
+    color: #016ff9;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 30px 0 25px;
+  }
+
+  .pricing-features-item {
+    border-top: 1px solid #e1f1ff;
+    font-size: 50%;
+    line-height: 1.5;
+    padding: 15px 0;
+    color: #667d8f;
+    text-align: left;
+  }
+
+  .pricing-table{
+    min-width: 110px;
+  }
+
+  .pricing-img {
+    margin-bottom: 25px;
+    max-width: 60px;
+  }
+
+
+  .tableau::after {
+    content: "";
+    background: #60a9ff;
+    background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+    background: -webkit-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+    background: linear-gradient(to bottom, #60a9ff 0%, #4394f4 100%);
+    border-radius: 30px;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-width: 160px;
+    z-index: 1;
+  }
 
   .caption {
     width: 100%;
