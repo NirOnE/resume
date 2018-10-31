@@ -236,7 +236,7 @@ figure {
 }
 
 #fixed-contact {
-  background-image: url("img/computer-code-1.jpg");
+  background-image: url("img/hobbies.jpeg");
   position: fixed;
   display: table;
   top: 0;
@@ -259,7 +259,7 @@ figure {
   height: 100%;
 }
 #fixed-edu {
-  background-image: url("img/education.jpeg");
+  background-image: url("img/computer-code-1.jpg");
   position: fixed;
   display: table;
   top: 0;
@@ -536,7 +536,7 @@ figure {
   color: #667d8f;
   font-weight: 400;
   line-height: 1.8em;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   max-width: 580px;
   font-size: 2rem;
 }
@@ -733,7 +733,9 @@ figure {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
-  background-image: url(img/computer-1.jpg);
+  /* background-image: url(img/computer-1.jpg); */
+  background-image: url(img/landing1.jpeg);
+  /* background-image: url(img/landing2.jpeg); */
 }
 
 /******** Perspective *******/
@@ -908,6 +910,38 @@ figure {
 }
 
 /********* END TABLEAU **************/
+
+
+
+
+/********* Hobbies **************/
+
+
+
+.hobbies h2  {
+  color: #0f283e;
+  font-size: 3.5em;
+  font-weight: 800;
+  line-height: 0.9em;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0.3em;
+  padding-bottom: 0.7em;
+}
+
+.cd-fixed-bg {  
+  min-height: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-fixed-bg.hobbies {
+  background-image: url("img/photography1.jpeg");
+}
+
+/********* END Hobbies **************/
 
 /*---Media Queries --*/
 @media (max-width: 1200px) {
