@@ -159,7 +159,7 @@ a:focus {
 .contactsocial a {
   font-size: 4em;
   padding: 3rem;
-  color: #01bafd;
+  /* color: #01bafd; */
   text-decoration: none;
 }
 
@@ -198,9 +198,9 @@ ul {
   margin-bottom: 0;
 }
 
-.about-me .col-md-6 {
-  /* padding-left: 12%; */
-}
+/* .about-me .col-md-6 {
+   padding-left: 12%; 
+} */
 
 .active-colour {
   color: #4dbfd9;
@@ -507,10 +507,40 @@ figure {
   padding-left: 2.5rem;
 }
 
+.fa-hiking {
+  color: #0b5a39;
+  font-size: 3em;
+  padding-left: 2.5rem;
+}
+
+
+.fa-globe-americas {
+  color: #1282c4;
+  font-size: 3em;
+  padding-left: 2.5rem;
+}
+
+.fa-futbol{
+  color: #8acdf3;
+  font-size: 3em;
+  padding-left: 2.5rem;
+}
+
+.fa-film {
+  color: #06254b;
+  font-size: 3em;
+  padding-left: 2.5rem;
+}
+
 .fa-skype:hover,
 .fa-linkedin:hover,
 .fa-instagram:hover,
-.fa-envelope:hover {
+.fa-envelope:hover,
+.fa-film:hover,
+.fa-globe-americas:hover,
+.fa-hiking:hover,
+.fa-futbol:hover
+ {
   color: #d5d5d5;
 }
 
@@ -684,11 +714,46 @@ figure {
 .contactsocial .fa-skype,
 .contactsocial .fa-linkedin,
 .contactsocial .fa-instagram,
-.contactsocial .fa-envelope {
-  font-size: 2em;
+.contactsocial .fa-envelope,
+.contactsocial .fa-plane-departure,
+.contactsocial .fa-film ,
+.contactsocial .fa-hiking,
+.contactsocial .fa-globe-americas,
+.contactsocial .fa-futbol
+{
+  font-size: 1.5em;
 }
 
+
+.hobbiesocial .fa-skype,
+.hobbiesocial .fa-linkedin,
+.hobbiesocial .fa-instagram,
+.hobbiesocial .fa-envelope,
+.hobbiesocial .fa-plane-departure,
+.hobbiesocial .fa-film ,
+.hobbiesocial .fa-hiking,
+.hobbiesocial .fa-globe-americas,
+.hobbiesocial .fa-futbol
+{
+  font-size: 1.6em;
+}
+
+
+
 .contactsocial h2 {
+  color: #0f283eb2;
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 0.9em;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.2em;
+  padding-bottom: 0.7em;
+}
+
+
+.hobbiesocial h2 {
   color: #0f283eb2;
   font-size: 2.5em;
   font-weight: 800;
@@ -916,7 +981,9 @@ figure {
 
 /********* Hobbies **************/
 
-
+.hobbies{
+  padding-top: 2em;
+}
 
 .hobbies h2  {
   color: #0f283e;
@@ -938,22 +1005,34 @@ figure {
 }
 
 .cd-fixed-bg.hobbies {
-  background-image: url("img/photography1.jpeg");
+  background-image: url("img/mountains.jpeg");
 }
+
+.cd-fixed-bg.skillz {
+  background-image: url("img/computer-code-1.jpg");
+}
+
+.cd-fixed-bg.work {
+  background-image: url("img/clock.jpeg");
+}
+
+
 
 /********* END Hobbies **************/
 
 /*---Media Queries --*/
 @media (max-width: 1200px) {
-  .display-2 {
-    /* font-size: 3.5em;   */
+
+
+  /* .display-2 {
+    font-size: 3.5em;  
   }
 
   .about-me h2 {
-    /* font-size: 200%;
+    font-size: 200%;
     text-align: center;
-    padding-bottom: 1em; */
-  }
+    padding-bottom: 1em;
+  } */
 
   .about-me .lead {
     /* font-size: 125%;
@@ -1131,6 +1210,18 @@ figure {
 
   .fa-envelope {
     color: #0063dc;
+    font-size: 2.5em;
+    padding-left: 1rem;
+  }
+
+  .fa-plane-departure {
+    color: #0063dc;
+    font-size: 2.5em;
+    padding-left: 1rem;
+  }
+
+  .fa-film {
+    color: #06254b;
     font-size: 2.5em;
     padding-left: 1rem;
   }
