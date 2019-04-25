@@ -33,6 +33,10 @@ a:focus {
   text-decoration: none;
 }
 
+.display-2 {
+  padding-top: 0.2em;
+}
+
 .navbar {
   padding: 0.8rem;
 }
@@ -798,7 +802,9 @@ figure {
   transform: translateZ(0);
   will-change: transform;
   /* background-image: url(img/computer-1.jpg); */
-  background-image: url(img/landing1.jpeg);
+  /* background-image: url(img/landing1.jpeg); */
+  background-image: url(img/NIR3.jpg);
+
   /* background-image: url(img/landing2.jpeg); */
 }
 
@@ -1017,17 +1023,13 @@ figure {
 
 /*---Media Queries --*/
 @media (max-width: 1200px) {
-  /* .display-2 {
-    font-size: 3.5em;  
-  }
 
   .about-me h2 {
     font-size: 200%;
     text-align: center;
     padding-bottom: 1em;
-  } */
-
-  .about-me .lead {
+  }
+  */ .about-me .lead {
     /* font-size: 125%;
     text-align: left; */
     padding-bottom: 2em;
