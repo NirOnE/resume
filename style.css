@@ -168,7 +168,6 @@ a:focus {
   padding: 3rem;
   /* color: #01bafd; */
   text-decoration: none;
-
 }
 
 ul {
@@ -521,14 +520,13 @@ figure {
   padding-left: 2.5rem;
 }
 
-
 .fa-globe-americas {
   color: #1282c4;
   font-size: 3em;
   padding-left: 2.5rem;
 }
 
-.fa-futbol{
+.fa-futbol {
   color: #8acdf3;
   font-size: 3em;
   padding-left: 2.5rem;
@@ -547,8 +545,7 @@ figure {
 .fa-film:hover,
 .fa-globe-americas:hover,
 .fa-hiking:hover,
-.fa-futbol:hover
- {
+.fa-futbol:hover {
   color: #d5d5d5;
 }
 
@@ -724,29 +721,24 @@ figure {
 .contactsocial .fa-instagram,
 .contactsocial .fa-envelope,
 .contactsocial .fa-plane-departure,
-.contactsocial .fa-film ,
+.contactsocial .fa-film,
 .contactsocial .fa-hiking,
 .contactsocial .fa-globe-americas,
-.contactsocial .fa-futbol
-{
+.contactsocial .fa-futbol {
   font-size: 1.5em;
 }
-
 
 .hobbiesocial .fa-skype,
 .hobbiesocial .fa-linkedin,
 .hobbiesocial .fa-instagram,
 .hobbiesocial .fa-envelope,
 .hobbiesocial .fa-plane-departure,
-.hobbiesocial .fa-film ,
+.hobbiesocial .fa-film,
 .hobbiesocial .fa-hiking,
 .hobbiesocial .fa-globe-americas,
-.hobbiesocial .fa-futbol
-{
+.hobbiesocial .fa-futbol {
   font-size: 1.6em;
 }
-
-
 
 .contactsocial h2 {
   color: #0f283eb2;
@@ -759,7 +751,6 @@ figure {
   padding: 1.2em;
   padding-bottom: 0.7em;
 }
-
 
 .hobbiesocial h2 {
   color: #0f283eb2;
@@ -984,16 +975,13 @@ figure {
 
 /********* END TABLEAU **************/
 
-
-
-
 /********* Hobbies **************/
 
-.hobbies{
+.hobbies {
   padding-top: 2em;
 }
 
-.hobbies h2  {
+.hobbies h2 {
   color: #0f283e;
   font-size: 3.5em;
   font-weight: 800;
@@ -1004,7 +992,7 @@ figure {
   padding-bottom: 0.7em;
 }
 
-.cd-fixed-bg {  
+.cd-fixed-bg {
   min-height: 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -1017,8 +1005,6 @@ figure {
   min-height: 30%;
 }
 
-
-
 .cd-fixed-bg.skillz {
   background-image: url("img/computer-code-1.jpg");
 }
@@ -1027,14 +1013,10 @@ figure {
   background-image: url("img/clock.jpeg");
 }
 
-
-
 /********* END Hobbies **************/
 
 /*---Media Queries --*/
 @media (max-width: 1200px) {
-
-
   /* .display-2 {
     font-size: 3.5em;  
   }
@@ -1075,6 +1057,10 @@ figure {
   /*     .container{
         width: 970px;
         } */
+
+  .cv-section-title h1 {
+    font-size: 2rem;
+  }
 
   .display-2 {
     font-size: 3.5em;
@@ -1143,6 +1129,9 @@ figure {
         }
  */
 
+  .cv-section-title h1 {
+    font-size: 2rem;
+  }
   .display-2 {
     font-size: 3.5em;
   }
@@ -1260,6 +1249,10 @@ figure {
         padding: 0.5em 1em;
     } */
 
+  .cv-section-title h1 {
+    font-size: 2rem;
+  }
+
   .panel {
     background-color: #fff;
     border-radius: 10px;
@@ -1295,7 +1288,7 @@ figure {
     text-align: left;
   }
 
-  .pricing-table{
+  .pricing-table {
     min-width: 110px;
   }
 
@@ -1303,7 +1296,6 @@ figure {
     margin-bottom: 25px;
     max-width: 60px;
   }
-
 
   .tableau::after {
     content: "";
