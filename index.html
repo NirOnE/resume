@@ -33,9 +33,11 @@
   <!-- <link rel="stylesheet" href="css/animations.css" type="text/css"> -->
   <!-- or -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
 
 
   <title>Erwann Colcanap resume</title>
+
 </head>
 
 <body>
@@ -75,6 +77,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#Contact">Contact</a>
           </li>
+          <li> 
+            <select class="selectpicker" data-width="fit">
+                <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+            </select>
+          </li>
+          <!-- <li class="nav-item">
+            <button onclick="changeLang('en')">English</button><button onclick="changeLang('fr')">Francais</button>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -97,7 +108,8 @@
 
   <div class="caption center-block text-center">
     <h1 class="display-2">Erwann Colcanap</h1>
-    <h3>Software Electrical Engineer</h3>
+    <h3><span lang="en" class="en">Software Electrical Engineer</span> <span lang="fr" class="fr">Ingenieur Electronique et traitement du signal</span></h3> 
+
     <div class="col-12 social padding container-fluid wow bounceInUp">
       <a href="https://www.linkedin.com/in/erwann-colcanap-8109897/" class="animatedClick" data-target="clicklinkdin">
         <i class="fab fa-linkedin clicklinkdin"></i>
@@ -119,7 +131,7 @@
   <!--- Profile  -->
   <!-- -------   -->
   <!-- -------   -->
-
+  <h1><span lang="en" class="en">Hello</span> <span lang="fr" class="fr">你好</span></h1>
   <article class="jumbotron about-me" id="Profile">
     <div class="container">
       <div class="row text-center">
@@ -713,9 +725,50 @@
   <script src="js/progressbar.js"></script>
   <script src="js/progresscharts.js"></script>
   <script src="js/perspective.js"></script>
-
   <script src="js/wow.js"></script>
+  <script>
+    $(function(){
+        $('.selectpicker').selectpicker();
+    });
+  </script>
   <!-- <script> new WOW().init();  </script> -->
+  <script>
+    // Maintain a supported Language List
+    var langList = ['en', 'fr'];
+    // Get browser Language
+    var userLang = navigator.language || navigator.userLanguage;
+    // extract Language (en-US => en)
+    userLang = userLang.substring(0, 2);
+    // Call the function to set language
+    changeLang(userLang);
+
+    // function to change language
+    function changeLang(lang) {
+      langList.forEach((langEle) => {
+        // if language matches, display
+        if (langEle == lang) {
+          var langElems = document.querySelectorAll('.' + langEle)
+          langElems.forEach((elem) => {
+            elem.style.display = "block"
+          })
+        }
+        // hide the language text
+        else {
+          hideLang(langEle)
+        }
+      })
+    }
+
+    // function to hide language
+    function hideLang(lang) {
+      var langElems = document.querySelectorAll('.' + lang)
+      langElems.forEach((elem) => {
+        elem.style.display = "none"
+      })
+    }
+  </script>
+  
+
   <script>
     var wow = new WOW(
       {
